@@ -1,9 +1,11 @@
 import "./App.css";
+import { Navbar, SearchAndFilter } from "./components/index";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello,,</h1>
+      <Navbar />
+      <SearchAndFilter />
     </div>
   );
 }
