@@ -5,7 +5,7 @@ import { moonOutline } from "../../assets";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="navbar-container">
       <h1>Where in the world?</h1>
       <div className="dark-toggle">
         <img src={moonOutline} alt="" />

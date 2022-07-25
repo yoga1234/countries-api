@@ -1,0 +1,14 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: var(--font-main);
+}
+.dark-toggle {
+  display: flex;
+  flex-direction: row;
+}
+.dark-toggle img {
+  width: 25px;
+  height: 25px;
+}
