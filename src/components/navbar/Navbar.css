@@ -3,12 +3,28 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: var(--font-main);
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.navbar-container h1 {
+  font-size: 24px;
 }
 .dark-toggle {
   display: flex;
   flex-direction: row;
+  column-gap: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.dark-toggle:hover {
+  cursor: pointer;
+  background-color: var(--color-dark-gray);
 }
 .dark-toggle img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
