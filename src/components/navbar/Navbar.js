@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Navbar.css";
-import { moonOutline, moonOutlineWhite } from "../../assets";
+import { moonOutlineWhite } from "../../assets";
 
 const Navbar = () => {
   return (
