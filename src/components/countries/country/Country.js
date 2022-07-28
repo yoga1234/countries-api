@@ -1,6 +1,6 @@
 import React from "react";
 
-import "Country.css";
+import "./Country.css";
 
 const Country = () => {
   return <div>Country</div>;

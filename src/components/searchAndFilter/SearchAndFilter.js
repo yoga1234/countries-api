@@ -14,8 +14,8 @@ const SearchAndFilter = () => {
       </div>
       <div className="filter-bar">
         <div className="select-wrapper">
-          <select name="regionfilter">
-            <option value="" disabled selected hidden>
+          <select name="regionfilter" defaultValue="Filter by Region">
+            <option value="Filter by Region" hidden>
               Filter by Region
             </option>
             <option value="Africa">Africa</option>

@@ -1,11 +1,12 @@
 import "./App.css";
-import { Navbar, SearchAndFilter } from "./components/index";
+import { Navbar, SearchAndFilter, CountryContainer } from "./components/index";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <SearchAndFilter />
+      <CountryContainer />
     </div>
   );
 }
