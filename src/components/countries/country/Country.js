@@ -1,11 +1,14 @@
 import React from "react";
 
 import "./Country.css";
+import { imageDummy } from "../../../assets";
 
 const Country = () => {
   return (
     <div className="country-container">
-      <div className="top-side">{/* <img src="" alt="" /> */}</div>
+      <div className="top-side">
+        <img src={imageDummy} alt="" />
+      </div>
       <div className="bottom-side">
         <h2>Country</h2>
         <p>
