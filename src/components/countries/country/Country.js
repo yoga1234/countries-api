@@ -10,7 +10,7 @@ const Country = () => {
         <img src={imageDummy} alt="" />
       </div>
       <div className="bottom-side">
-        <h2>Country</h2>
+        <h2>United States</h2>
         <p>
           Population: <span>1.000.000</span>
         </p>

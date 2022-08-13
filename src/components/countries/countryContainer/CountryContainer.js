@@ -5,11 +5,12 @@ import "./CountryContainer.css";
 
 const CountryContainer = () => {
   return (
-    <div>
-      <Country />
-      <Country />
-      <Country />
-      <Country />
+    <div className="countries-container">
+      <div className="country-card-container">
+        <Country />
+        <Country />
+        <Country />
+      </div>
     </div>
   );
 };

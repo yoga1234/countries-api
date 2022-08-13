@@ -1,0 +1,15 @@
+.countries-container {
+  background-color: var(--color-very-dark-blue);
+  padding-top: 25px;
+  min-height: 100vh;
+  height: max-content;
+}
+.country-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  width: 1150px;
+  margin: auto;
+}
