@@ -1,12 +1,18 @@
 import "./App.css";
-import { Navbar, SearchAndFilter, CountryContainer } from "./components/index";
+import {
+  Navbar,
+  SearchAndFilter,
+  CountryContainer,
+  SingleCountry,
+} from "./components/index";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <SearchAndFilter />
-      <CountryContainer />
+      <CountryContainer /> */}
+      <SingleCountry />
     </div>
   );
 }
