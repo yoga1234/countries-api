@@ -4,6 +4,8 @@ import searchOutline from "./search-outline.svg";
 import searchOutlineWhite from "./search-outline-white.svg";
 import imageDummy from "./pe.png";
 import svgDummy from "./pe.svg";
+import backwardDark from "./backwark-dark.svg";
+import backwardWhite from "./backwark-white.svg";
 
 export {
   moonOutline,
@@ -12,4 +14,6 @@ export {
   searchOutlineWhite,
   imageDummy,
   svgDummy,
+  backwardDark,
+  backwardWhite,
 };
