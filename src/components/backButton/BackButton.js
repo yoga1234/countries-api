@@ -6,9 +6,8 @@ import "./BackButton.css";
 const BackButton = () => {
   return (
     <div className="single-back-btn">
-      <button>
-        <img src={backwardWhite} alt="" /> Back
-      </button>
+      <img className="backward-icon" src={backwardWhite} alt="" />
+      <button>Back</button>
     </div>
   );
 };

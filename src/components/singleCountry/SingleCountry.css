@@ -1,0 +1,6 @@
+.single-country-container {
+  background-color: var(--color-very-dark-blue);
+}
+.content-container {
+  display: flex;
+}

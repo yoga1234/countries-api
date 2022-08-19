@@ -8,11 +8,13 @@ import "./SingleCountry.css";
 
 const SingleCountry = () => {
   return (
-    <div>
+    <div className="single-country-container">
       <Navbar />
       <BackButton />
-      <LeftSide />
-      <RightSide />
+      <div className="content-container">
+        <LeftSide />
+        <RightSide />
+      </div>
     </div>
   );
 };
