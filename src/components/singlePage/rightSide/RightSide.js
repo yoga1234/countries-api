@@ -32,9 +32,11 @@ const RightSide = () => {
           Languages: <span>Dutch, French, German</span>
         </p>
       </div>
+
       <div className="border-container">
         <p>
-          Border Countries: <span>France</span>
+          Border Countries:
+          <span>France</span>
           <span>Gernamu</span>
           <span>Netherlands</span>
         </p>
