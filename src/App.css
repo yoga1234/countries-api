@@ -6,7 +6,7 @@
   --color-bg-main: hsl(207, 26%, 17%);
   --color-bg-main-2: hsl(200, 15%, 8%);
   --color-dark-gray: hsl(0, 0%, 52%);
-  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-very-light-gray: hsl(0, 0%, 90%);
   /* font color white */
   --font-color: hsl(0, 0%, 100%);
   --font-main: "Nunito Sans", sans-serif;
@@ -19,14 +19,18 @@
   --color-bg-main: hsl(207, 26%, 17%);
   /* background-secondary */
   --color-bg-secondary: hsl(209, 23%, 22%);
+  /* border-color */
+  --color-border: hsl(207, 26%, 17%);
 }
-body.dark-mode {
+body.light-mode {
   /* font-color */
   --font-color: hsl(200, 15%, 8%);
   /* background-main */
   --color-bg-main: hsl(0, 0%, 100%);
   /* background-secondary */
   --color-bg-secondary: hsl(0, 0%, 100%);
+  /* --color-border */
+  --color-border: hsl(0, 0%, 90%);
 }
 * {
   margin: 0;

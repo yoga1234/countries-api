@@ -5,10 +5,12 @@
   font-family: var(--font-main);
   background-color: var(--color-bg-secondary);
   color: var(--font-color);
+  border-bottom: 5px solid var(--color-border);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 50px;
   padding-right: 50px;
+  transition: all 0.25s ease-out;
 }
 .navbar-container h1 {
   font-size: 24px;
