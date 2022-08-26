@@ -3,12 +3,12 @@ import {
   Navbar,
   SearchAndFilter,
   CountryContainer,
-  SingleCountry,
+  // SingleCountry,
 } from "./components/index";
 
 const App = () => {
   const themeToggle = () => {
-    console.log(document.body.classList);
+    document.body.classList.toggle("dark-mode");
   };
 
   return (

@@ -7,7 +7,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   font-family: var(--font-main);
-  background-color: var(--color-very-dark-blue);
+  background-color: var(--color-bg-main);
 }
 .search-bar form img {
   width: 20px;
@@ -22,11 +22,11 @@
   width: 250px;
   border-radius: 5px;
   border: none;
-  background-color: var(--color-dark-blue);
-  color: var(--color-white);
+  background-color: var(--color-bg-secondary);
+  color: var(--font-color);
 }
 .search-bar form input::placeholder {
-  color: var(--color-white);
+  color: var(--font-color);
 }
 select {
   -webkit-appearance: none;
@@ -37,7 +37,7 @@ select {
 }
 .select-wrapper::after {
   content: "▼";
-  color: var(--color-white);
+  color: var(--font-color);
   font-size: 1rem;
   top: 14px;
   right: 10px;
@@ -48,8 +48,8 @@ select {
   padding: 15px 40px 15px 15px;
   border: none;
   border-radius: 5px;
-  background-color: var(--color-dark-blue);
-  color: var(--color-white);
+  background-color: var(--color-bg-secondary);
+  color: var(--font-color);
 }
 .filter-bar select:hover {
   cursor: pointer;

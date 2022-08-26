@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: var(--font-main);
-  background-color: var(--color-dark-blue);
-  color: var(--color-white);
+  background-color: var(--color-bg-secondary);
+  color: var(--font-color);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 50px;

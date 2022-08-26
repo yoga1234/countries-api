@@ -1,6 +1,6 @@
 .country-container {
   width: 250px;
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-bg-secondary);
   border-radius: 10px;
 }
 .top-side img {
@@ -8,7 +8,7 @@
   border-radius: 10px 10px 0 0;
 }
 .bottom-side {
-  color: var(--color-white);
+  color: var(--font-color);
   font-family: var(--font-main);
   margin-left: 25px;
   padding-bottom: 30px;
