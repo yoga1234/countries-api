@@ -6,15 +6,19 @@ import {
   SingleCountry,
 } from "./components/index";
 
-function App() {
+const App = () => {
+  const themeToggle = () => {
+    console.log(document.body.classList);
+  };
+
   return (
     <div className="App">
-      {/* <Navbar />
+      <Navbar toggle={themeToggle} />
       <SearchAndFilter />
-      <CountryContainer /> */}
-      <SingleCountry />
+      <CountryContainer />
+      {/* <SingleCountry /> */}
     </div>
   );
-}
+};
 
 export default App;
