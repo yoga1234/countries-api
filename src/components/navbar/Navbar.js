@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./Navbar.css";
-import { moonOutlineWhite } from "../../assets";
+import { moonOutlineWhite, moonOutline } from "../../assets";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, darkMode }) => {
   return (
     <div className="navbar-container">
       <h1>Where in the world?</h1>
@@ -13,7 +13,8 @@ const Navbar = ({ toggle }) => {
         }}
         className="dark-toggle"
       >
-        <img src={moonOutlineWhite} alt="" />
+        <img src={darkMode === true ? moonOutlineWhite : moonOutline} alt="" />
+        {/* <img src={moonOutline} alt="" /> */}
         <p>Dark Mode</p>
       </div>
     </div>

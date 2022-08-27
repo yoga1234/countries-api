@@ -11,12 +11,12 @@ import {
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const themeToggle = () => {
-    // document.body.classList.toggle("light-mode");
     if (darkMode === true) {
-      document.body.classList.remove("light-mode");
+      document.body.classList.toggle("light-mode");
       setDarkMode(!darkMode);
-    } else {
-      document.body.classList.add("light-mode");
+    }
+    if (darkMode === false) {
+      document.body.classList.toggle("light-mode");
       setDarkMode(!darkMode);
     }
   };
@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar toggle={themeToggle} />
+      <Navbar toggle={themeToggle} darkMode={darkMode} />
       <SearchAndFilter />
       <CountryContainer />
       {/* <SingleCountry /> */}
