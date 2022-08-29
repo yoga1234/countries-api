@@ -8,8 +8,8 @@
   border-bottom: 5px solid var(--color-border);
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   transition: all 0.25s ease-out;
 }
 .navbar-container h1 {

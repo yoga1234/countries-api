@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 100px;
   padding-bottom: 25px;
   font-family: var(--font-main);
   background-color: var(--color-bg-main);
@@ -47,7 +47,6 @@ select {
   right: 10px;
   position: absolute;
 }
-
 .filter-bar select {
   font-family: inherit;
   padding: 15px 40px 15px 15px;
