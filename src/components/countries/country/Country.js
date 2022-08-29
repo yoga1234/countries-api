@@ -3,14 +3,14 @@ import React from "react";
 import "./Country.css";
 import { imageDummy } from "../../../assets";
 
-const Country = () => {
+const Country = ({ country }) => {
   return (
     <div className="country-container">
       <div className="top-side">
         <img src={imageDummy} alt="" />
       </div>
       <div className="bottom-side">
-        <h2>United States</h2>
+        <h2>{country.name.common}</h2>
         <p>
           Population: <span>1.000.000</span>
         </p>

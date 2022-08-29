@@ -36,7 +36,8 @@ const App = () => {
     <div className="App">
       <Navbar toggle={themeToggle} darkMode={darkMode} />
       <SearchAndFilter darkMode={darkMode} />
-      <CountryContainer />
+      {/* do not render when the data is unavailable */}
+      {/* <CountryContainer countryData={countryData} /> */}
       {/* <SingleCountry darkMode={darkMode} /> */}
     </div>
   );
