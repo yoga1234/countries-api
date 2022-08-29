@@ -1,11 +1,10 @@
-import { useEffect } from "react";
 import { useState } from "react";
 import "./App.css";
 import {
   Navbar,
-  SearchAndFilter,
-  CountryContainer,
-  // SingleCountry,
+  // SearchAndFilter,
+  // CountryContainer,
+  SingleCountry,
 } from "./components/index";
 
 const App = () => {
@@ -24,9 +23,9 @@ const App = () => {
   return (
     <div className="App">
       <Navbar toggle={themeToggle} darkMode={darkMode} />
-      <SearchAndFilter darkMode={darkMode} />
-      <CountryContainer />
-      {/* <SingleCountry /> */}
+      {/* <SearchAndFilter darkMode={darkMode} /> */}
+      {/* <CountryContainer /> */}
+      <SingleCountry darkMode={darkMode} />
     </div>
   );
 };
