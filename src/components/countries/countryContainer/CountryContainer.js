@@ -10,6 +10,10 @@ const CountryContainer = () => {
         <Country />
         <Country />
         <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
       </div>
     </div>
   );
