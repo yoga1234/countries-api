@@ -9,6 +9,7 @@
   font-family: var(--font-main);
   background-color: var(--color-bg-main);
 }
+
 .search-bar form img {
   width: 20px;
   height: 20px;
@@ -24,6 +25,9 @@
   border: none;
   background-color: var(--color-bg-secondary);
   color: var(--font-color);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .search-bar form input::placeholder {
   color: var(--font-color);
@@ -43,6 +47,7 @@ select {
   right: 10px;
   position: absolute;
 }
+
 .filter-bar select {
   font-family: inherit;
   padding: 15px 40px 15px 15px;
@@ -50,6 +55,9 @@ select {
   border-radius: 5px;
   background-color: var(--color-bg-secondary);
   color: var(--font-color);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .filter-bar select:hover {
   cursor: pointer;

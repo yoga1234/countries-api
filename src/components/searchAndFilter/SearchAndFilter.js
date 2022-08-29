@@ -3,12 +3,16 @@ import React from "react";
 import "./SearchAndFilter.css";
 import { searchOutline, searchOutlineWhite } from "../../assets";
 
-const SearchAndFilter = () => {
+const SearchAndFilter = ({ darkMode }) => {
   return (
     <div className="search-container">
       <div className="search-bar">
         <form>
-          <img src={searchOutlineWhite} alt="" />
+          <img
+            src={darkMode === true ? searchOutlineWhite : searchOutline}
+            alt=""
+          />
+          {/* <img src={searchOutlineWhite} alt="" /> */}
           <input type="text" placeholder="Search for a country..." />
         </form>
       </div>

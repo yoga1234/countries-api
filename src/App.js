@@ -20,18 +20,11 @@ const App = () => {
       setDarkMode(!darkMode);
     }
   };
-  // useEffect(() => {
-  //   if (darkMode === true) {
-  //     document.body.classList.remove("light-mode");
-  //   } else {
-  //     document.body.classList.add("light-mode");
-  //   }
-  // }, []);
 
   return (
     <div className="App">
       <Navbar toggle={themeToggle} darkMode={darkMode} />
-      <SearchAndFilter />
+      <SearchAndFilter darkMode={darkMode} />
       <CountryContainer />
       {/* <SingleCountry /> */}
     </div>
