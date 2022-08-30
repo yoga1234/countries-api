@@ -8,7 +8,7 @@ const CountryContainer = ({ countryData }) => {
     <div className="countries-container">
       <div className="country-card-container">
         {countryData === undefined ? (
-          <p>Loading...</p>
+          <p className="loading-text">Loading...</p>
         ) : (
           countryData.map((country) => (
             <Country
@@ -17,16 +17,6 @@ const CountryContainer = ({ countryData }) => {
             />
           ))
         )}
-        {/* {countryData.map((country) => (
-          <Country country={country} />
-        ))} */}
-        {/* <Country />
-        <Country />
-        <Country />
-        <Country />
-        <Country />
-        <Country />
-        <Country /> */}
       </div>
     </div>
   );

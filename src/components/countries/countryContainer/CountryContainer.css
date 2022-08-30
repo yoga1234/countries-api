@@ -13,3 +13,9 @@
   width: 1150px;
   margin: auto;
 }
+.loading-text {
+  color: var(--font-color);
+  font-size: 62px;
+  margin: 100px auto 0 auto;
+  font-family: var(--font-main);
+}
