@@ -6,6 +6,7 @@ import imageDummy from "./pe.png";
 import svgDummy from "./pe.svg";
 import backwardDark from "./backward-dark.svg";
 import backwardWhite from "./backward-white.svg";
+import dummyCountryImage from "./dummyCountryImage.svg";
 
 export {
   moonOutline,
@@ -14,6 +15,7 @@ export {
   searchOutlineWhite,
   imageDummy,
   svgDummy,
+  dummyCountryImage,
   backwardDark,
   backwardWhite,
 };

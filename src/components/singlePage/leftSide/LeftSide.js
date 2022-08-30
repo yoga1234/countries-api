@@ -1,12 +1,16 @@
 import React from "react";
 
-import { svgDummy } from "../../../assets";
+import { dummyCountryImage } from "../../../assets";
 import "./LeftSide.css";
 
-const LeftSide = () => {
+const LeftSide = ({ countryImage }) => {
   return (
     <div className="leftside-container">
-      <img src={svgDummy} alt="" />
+      {countryImage === undefined ? (
+        <img src={dummyCountryImage} alt="" />
+      ) : (
+        <img src={countryImage} alt="" />
+      )}
     </div>
   );
 };
