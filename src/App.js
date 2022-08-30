@@ -4,12 +4,13 @@ import {
   Navbar,
   SearchAndFilter,
   CountryContainer,
-  // SingleCountry,
+  SingleCountry,
 } from "./components/index";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [countryData, setCountryData] = useState(undefined);
+  const [activeCountry, setActiveCountry] = useState(undefined);
   const themeToggle = () => {
     if (darkMode === true) {
       document.body.classList.toggle("light-mode");
@@ -28,6 +29,9 @@ const App = () => {
         setCountryData(data);
       });
   };
+  const getActiveCountry = (data) => {
+    setActiveCountry(data);
+  };
   useEffect(() => {
     getData();
   }, []);
@@ -35,10 +39,16 @@ const App = () => {
   return (
     <div className="App">
       <Navbar toggle={themeToggle} darkMode={darkMode} />
-      <SearchAndFilter darkMode={darkMode} />
-      {/* do not render when the data is unavailable */}
-      <CountryContainer countryData={countryData} />
-      {/* <SingleCountry darkMode={darkMode} /> */}
+      <div className="main-content">
+        <SearchAndFilter darkMode={darkMode} />
+        <CountryContainer
+          getActiveCountry={getActiveCountry}
+          countryData={countryData}
+        />
+      </div>
+      <div className="single-content">
+        <SingleCountry activeCountry={activeCountry} darkMode={darkMode} />
+      </div>
     </div>
   );
 };

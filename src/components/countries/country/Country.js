@@ -2,9 +2,26 @@ import React from "react";
 
 import "./Country.css";
 
-const Country = ({ country }) => {
+const Country = ({ country, getActiveCountry }) => {
   return (
-    <div className="country-container">
+    <div
+      onClick={() => {
+        getActiveCountry({
+          flags: country.flags.svg,
+          name: country.name.common,
+          nativeName: Object.values(country.name.nativeName)[0].official,
+          population: country.population,
+          region: country.region,
+          subRegion: country.subregion,
+          capital: country.capital[0],
+          topLevelDomain: country.tld[0],
+          currencies: Object.keys(country.currencies)[0],
+          languages: Object.keys(country.languages)[0],
+          borders: country.borders,
+        });
+      }}
+      className="country-container"
+    >
       <div className="top-side">
         <img src={country.flags.png} alt="" />
       </div>

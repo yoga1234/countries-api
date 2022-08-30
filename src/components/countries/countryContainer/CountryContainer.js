@@ -3,7 +3,7 @@ import Country from "../country/Country";
 
 import "./CountryContainer.css";
 
-const CountryContainer = ({ countryData }) => {
+const CountryContainer = ({ countryData, getActiveCountry }) => {
   return (
     <div className="countries-container">
       <div className="country-card-container">
@@ -12,6 +12,7 @@ const CountryContainer = ({ countryData }) => {
         ) : (
           countryData.map((country) => (
             <Country
+              getActiveCountry={getActiveCountry}
               key={country.name.common + country.population}
               country={country}
             />
