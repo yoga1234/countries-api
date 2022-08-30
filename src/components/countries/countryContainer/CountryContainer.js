@@ -7,9 +7,19 @@ const CountryContainer = ({ countryData }) => {
   return (
     <div className="countries-container">
       <div className="country-card-container">
-        {countryData.map((country) => (
+        {countryData === undefined ? (
+          <p>Loading...</p>
+        ) : (
+          countryData.map((country) => (
+            <Country
+              key={country.name.common + country.population}
+              country={country}
+            />
+          ))
+        )}
+        {/* {countryData.map((country) => (
           <Country country={country} />
-        ))}
+        ))} */}
         {/* <Country />
         <Country />
         <Country />

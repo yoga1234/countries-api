@@ -9,7 +9,7 @@ import {
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const [countryData, setCountryData] = useState();
+  const [countryData, setCountryData] = useState(undefined);
   const themeToggle = () => {
     if (darkMode === true) {
       document.body.classList.toggle("light-mode");
@@ -37,7 +37,7 @@ const App = () => {
       <Navbar toggle={themeToggle} darkMode={darkMode} />
       <SearchAndFilter darkMode={darkMode} />
       {/* do not render when the data is unavailable */}
-      {/* <CountryContainer countryData={countryData} /> */}
+      <CountryContainer countryData={countryData} />
       {/* <SingleCountry darkMode={darkMode} /> */}
     </div>
   );
