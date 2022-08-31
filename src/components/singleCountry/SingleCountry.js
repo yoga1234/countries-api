@@ -13,12 +13,12 @@ const SingleCountry = ({ darkMode, activeCountry }) => {
       {activeCountry === undefined ? (
         <div className="content-container">
           <LeftSide countryImage={undefined} />
-          <RightSide />
+          <RightSide countryData={undefined} />
         </div>
       ) : (
         <div className="content-container">
           <LeftSide countryImage={activeCountry.flags} />
-          <RightSide />
+          <RightSide countryData={activeCountry} />
         </div>
       )}
     </div>

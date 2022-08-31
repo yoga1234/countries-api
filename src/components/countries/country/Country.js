@@ -3,22 +3,50 @@ import React from "react";
 import "./Country.css";
 
 const Country = ({ country, getActiveCountry }) => {
+  const filterData = () => {
+    const nativeCheck =
+      Object.hasOwn(country.name, "nativeName") === true
+        ? Object.values(country.name.nativeName)[0].official
+        : "-";
+    const capitalCheck =
+      Object.hasOwn(country, "capital") === true
+        ? Object.values(country.capital[0])
+        : "-";
+    const currenciesCheck =
+      Object.hasOwn(country, "currencies") === true
+        ? Object.keys(country.currencies)[0]
+        : "-";
+    const languagesCheck =
+      Object.hasOwn(country, "languages") === true
+        ? Object.keys(country.languages)[0]
+        : "-";
+    const bordersCheck =
+      Object.hasOwn(country, "borders") === true
+        ? Object.values(country.borders)
+        : ["-"];
+    const domainCheck =
+      Object.hasOwn(country, "tld") === true ? country.tld[0] : "-";
+    const subRegionCheck =
+      Object.hasOwn(country, "subregion") === true ? country.subregion : "-";
+    return {
+      flags: country.flags.svg,
+      name: country.name.common,
+      nativeName: nativeCheck,
+      population: country.population,
+      region: country.region,
+      subRegion: subRegionCheck,
+      capital: capitalCheck,
+      topLevelDomain: domainCheck,
+      currencies: currenciesCheck,
+      languages: languagesCheck,
+      borders: bordersCheck,
+    };
+  };
   return (
     <div
       onClick={() => {
-        getActiveCountry({
-          flags: country.flags.svg,
-          name: country.name.common,
-          nativeName: Object.values(country.name.nativeName)[0].official,
-          population: country.population,
-          region: country.region,
-          subRegion: country.subregion,
-          capital: country.capital[0],
-          topLevelDomain: country.tld[0],
-          currencies: Object.keys(country.currencies)[0],
-          languages: Object.keys(country.languages)[0],
-          borders: country.borders,
-        });
+        // getActiveCountry(filterData());
+        console.log(filterData());
       }}
       className="country-container"
     >
