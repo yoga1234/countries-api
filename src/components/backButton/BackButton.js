@@ -3,7 +3,7 @@ import React from "react";
 import { backwardDark, backwardWhite } from "../../assets";
 import "./BackButton.css";
 
-const BackButton = ({ darkMode }) => {
+const BackButton = ({ darkMode, toggleContent }) => {
   return (
     <div className="single-back-btn">
       <img
@@ -12,7 +12,13 @@ const BackButton = ({ darkMode }) => {
         alt=""
       />
       {/* <img className="backward-icon" src={backwardWhite} alt="" /> */}
-      <button>Back</button>
+      <button
+        onClick={() => {
+          toggleContent("single");
+        }}
+      >
+        Back
+      </button>
     </div>
   );
 };

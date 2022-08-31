@@ -11,6 +11,7 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [countryData, setCountryData] = useState(undefined);
   const [activeCountry, setActiveCountry] = useState(undefined);
+  const [mainContainer, setMainContainer] = useState(true);
   const themeToggle = () => {
     if (darkMode === true) {
       document.body.classList.toggle("light-mode");
@@ -32,6 +33,10 @@ const App = () => {
   const getActiveCountry = (data) => {
     setActiveCountry(data);
   };
+  const toggleContent = (source) => {
+    source === "country" ? setMainContainer(false) : setMainContainer(true);
+    console.log(source);
+  };
   useEffect(() => {
     getData();
   }, []);
@@ -42,12 +47,23 @@ const App = () => {
       <div className="main-content">
         <SearchAndFilter darkMode={darkMode} />
         <CountryContainer
+          activeState={mainContainer}
+          toggleContent={toggleContent}
           getActiveCountry={getActiveCountry}
           countryData={countryData}
         />
       </div>
-      <div className="single-content">
-        <SingleCountry activeCountry={activeCountry} darkMode={darkMode} />
+      <div
+        className="single-content"
+        style={
+          mainContainer === false ? { display: "block" } : { display: "block" }
+        }
+      >
+        <SingleCountry
+          toggleContent={toggleContent}
+          activeCountry={activeCountry}
+          darkMode={darkMode}
+        />
       </div>
     </div>
   );

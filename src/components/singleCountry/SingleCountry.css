@@ -1,3 +1,6 @@
+.single-content {
+  display: none;
+}
 .single-country-container {
   background-color: var(--color-bg-main);
 }

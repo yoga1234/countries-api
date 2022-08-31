@@ -1,6 +1,7 @@
 .countries-container {
   background-color: var(--color-bg-main);
   padding-top: 25px;
+  padding-bottom: 25px;
   min-height: 100vh;
   height: max-content;
 }

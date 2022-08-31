@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Country.css";
 
-const Country = ({ country, getActiveCountry }) => {
+const Country = ({ country, getActiveCountry, toggleContent }) => {
   const filterData = () => {
     const nativeCheck =
       Object.hasOwn(country.name, "nativeName") === true
@@ -46,7 +46,7 @@ const Country = ({ country, getActiveCountry }) => {
     <div
       onClick={() => {
         getActiveCountry(filterData());
-        // console.log(filterData());
+        toggleContent("country");
       }}
       className="country-container"
     >
