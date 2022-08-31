@@ -45,8 +45,8 @@ const Country = ({ country, getActiveCountry }) => {
   return (
     <div
       onClick={() => {
-        // getActiveCountry(filterData());
-        console.log(filterData());
+        getActiveCountry(filterData());
+        // console.log(filterData());
       }}
       className="country-container"
     >
