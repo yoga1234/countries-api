@@ -25,6 +25,7 @@ const SearchAndFilter = ({ darkMode, changeActiveRegion }) => {
             <option value="Filter by Region" hidden>
               Filter by Region
             </option>
+            <option value="All">All</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
             <option value="Asia">Asia</option>

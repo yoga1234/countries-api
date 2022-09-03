@@ -31,13 +31,6 @@ const App = () => {
         setCountryData(data);
       });
   };
-  const getRegionData = () => {
-    fetch(`https://restcountries.com/v3.1/region/${activeRegion}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setCountryData(data);
-      });
-  };
   const getActiveCountry = (data) => {
     setActiveCountry(data);
   };
@@ -57,8 +50,11 @@ const App = () => {
           setCountryData(data);
         });
     };
-    if (activeRegion !== "none") {
+    if (activeRegion !== "none" && activeRegion !== "All") {
       getRegionData();
+    }
+    if (activeRegion === "All") {
+      getData();
     }
   }, [activeRegion]);
   useEffect(() => {
