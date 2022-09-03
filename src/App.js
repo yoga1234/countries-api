@@ -31,7 +31,13 @@ const App = () => {
         setCountryData(data);
       });
   };
-  const getRegionData = () => {};
+  const getRegionData = () => {
+    fetch(`https://restcountries.com/v3.1/region/${activeRegion}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setCountryData(data);
+      });
+  };
   const getActiveCountry = (data) => {
     setActiveCountry(data);
   };
@@ -39,10 +45,22 @@ const App = () => {
     source === "country" ? setMainContainer(false) : setMainContainer(true);
   };
   const changeActiveRegion = (e) => {
-    // console.log(e.target.options.selectedIndex);
-    console.log(e.target[e.target.options.selectedIndex].text);
-    // setActiveRegion(data);
+    const selectedRegion = e.target[e.target.options.selectedIndex].text;
+    setActiveRegion(selectedRegion);
+    setCountryData(undefined);
   };
+  useEffect(() => {
+    const getRegionData = () => {
+      fetch(`https://restcountries.com/v3.1/region/${activeRegion}`)
+        .then((res) => res.json())
+        .then((data) => {
+          setCountryData(data);
+        });
+    };
+    if (activeRegion !== "none") {
+      getRegionData();
+    }
+  }, [activeRegion]);
   useEffect(() => {
     getData();
   }, []);
