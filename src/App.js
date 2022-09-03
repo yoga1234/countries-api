@@ -79,7 +79,7 @@ const App = () => {
       <div
         className="single-content"
         style={
-          mainContainer === false ? { display: "block" } : { display: "block" }
+          mainContainer === false ? { display: "block" } : { display: "none" }
         }
       >
         <SingleCountry
