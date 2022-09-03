@@ -12,6 +12,7 @@ const App = () => {
   const [countryData, setCountryData] = useState(undefined);
   const [activeCountry, setActiveCountry] = useState(undefined);
   const [mainContainer, setMainContainer] = useState(true);
+  const [activeRegion, setActiveRegion] = useState("none");
   const themeToggle = () => {
     if (darkMode === true) {
       document.body.classList.toggle("light-mode");
@@ -30,12 +31,17 @@ const App = () => {
         setCountryData(data);
       });
   };
+  const getRegionData = () => {};
   const getActiveCountry = (data) => {
     setActiveCountry(data);
   };
   const toggleContent = (source) => {
     source === "country" ? setMainContainer(false) : setMainContainer(true);
-    console.log(source);
+  };
+  const changeActiveRegion = (e) => {
+    // console.log(e.target.options.selectedIndex);
+    console.log(e.target[e.target.options.selectedIndex].text);
+    // setActiveRegion(data);
   };
   useEffect(() => {
     getData();
@@ -45,7 +51,10 @@ const App = () => {
     <div className="App">
       <Navbar toggle={themeToggle} darkMode={darkMode} />
       <div className="main-content">
-        <SearchAndFilter darkMode={darkMode} />
+        <SearchAndFilter
+          changeActiveRegion={changeActiveRegion}
+          darkMode={darkMode}
+        />
         <CountryContainer
           activeState={mainContainer}
           toggleContent={toggleContent}
