@@ -20,3 +20,19 @@
   margin: 100px auto 0 auto;
   font-family: var(--font-main);
 }
+@media only screen and (max-width: 1175px) {
+  .country-card-container {
+    width: 1100px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .country-card-container {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .country-card-container {
+    width: 500px;
+  }
+}
