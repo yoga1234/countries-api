@@ -64,3 +64,24 @@ select {
 .filter-bar option {
   margin: 10px;
 }
+@media only screen and (max-width: 675px) {
+  .search-container {
+    flex-direction: column;
+  }
+  .filter-bar {
+    margin-top: 32px;
+    margin-left: 20px;
+  }
+  .select-wrapper::after {
+    right: 0;
+    left: 120px;
+  }
+  .search-bar form input {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 572px) {
+  .search-bar form input {
+    width: 200px;
+  }
+}
