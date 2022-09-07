@@ -36,9 +36,11 @@ const RightSide = ({ countryData }) => {
       <div className="border-container">
         <p>
           Border Countries:
-          <span>France</span>
-          <span>Gernamu</span>
-          <span>Netherlands</span>
+          <span className="border-separator">
+            <span>France</span>
+            <span>Gernamu</span>
+            <span>Netherlands</span>
+          </span>
         </p>
       </div>
     </div>
@@ -75,9 +77,16 @@ const RightSide = ({ countryData }) => {
       <div className="border-container">
         <p>
           Border Countries:
-          <span>France</span>
-          <span>Gernamu</span>
-          <span>Netherlands</span>
+          <span className="border-separator">
+            <span>Loading...</span>
+            <span>Loading...</span>
+            <span>Loading...</span>
+            <span>Loading...</span>
+            <span>Loading...</span>
+            <span>Loading...</span>
+            <span>Loading...</span>
+            <span>Loading...</span>
+          </span>
         </p>
       </div>
     </div>

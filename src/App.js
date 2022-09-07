@@ -24,13 +24,13 @@ const App = () => {
     }
   };
 
-  const getData = () => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((res) => res.json())
-      .then((data) => {
-        setCountryData(data);
-      });
-  };
+  // const getData = () => {
+  //   fetch("https://restcountries.com/v3.1/all")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setCountryData(data);
+  //     });
+  // };
   const getActiveCountry = (data) => {
     setActiveCountry(data);
   };
@@ -54,11 +54,11 @@ const App = () => {
       getRegionData();
     }
     if (activeRegion === "All") {
-      getData();
+      // getData();
     }
   }, [activeRegion]);
   useEffect(() => {
-    getData();
+    // getData();
   }, []);
 
   return (
@@ -69,17 +69,17 @@ const App = () => {
           changeActiveRegion={changeActiveRegion}
           darkMode={darkMode}
         />
-        <CountryContainer
+        {/* <CountryContainer
           activeState={mainContainer}
           toggleContent={toggleContent}
           getActiveCountry={getActiveCountry}
           countryData={countryData}
-        />
+        /> */}
       </div>
       <div
         className="single-content"
         style={
-          mainContainer === false ? { display: "block" } : { display: "none" }
+          mainContainer === false ? { display: "block" } : { display: "block" }
         }
       >
         <SingleCountry

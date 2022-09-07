@@ -12,3 +12,10 @@
   height: 75vh;
   margin: auto;
 }
+@media only screen and (max-width: 950px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+}
