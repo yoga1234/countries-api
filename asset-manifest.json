@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/countries-api/static/css/main.c50e2d05.css",
+    "main.js": "/countries-api/static/js/main.cfec483a.js",
+    "static/media/dummyCountryImage.svg": "/countries-api/static/media/dummyCountryImage.f9b7729a2bab65d7b98e18c2327419f0.svg",
+    "index.html": "/countries-api/index.html",
+    "static/media/search-outline.svg": "/countries-api/static/media/search-outline.b9fa2713db82127cf6bd1799d5a0f312.svg",
+    "static/media/moon-outline.svg": "/countries-api/static/media/moon-outline.ed14e62383eee27a57c447e80da2f840.svg",
+    "static/media/moon-outline-white.svg": "/countries-api/static/media/moon-outline-white.17c685def37c601897385ac3193efc9b.svg",
+    "static/media/search-outline-white.svg": "/countries-api/static/media/search-outline-white.09a34b874a449f63de892b6d3ec76527.svg",
+    "static/media/backward-dark.svg": "/countries-api/static/media/backward-dark.1a422d2377e15fbe0747be353f641368.svg",
+    "static/media/backward-white.svg": "/countries-api/static/media/backward-white.84240aad5eb9528eeb572974c009d823.svg",
+    "static/media/pe.svg": "/countries-api/static/media/pe.433e0c9c63ecc522eca40dbbacdff9f9.svg",
+    "main.c50e2d05.css.map": "/countries-api/static/css/main.c50e2d05.css.map",
+    "main.cfec483a.js.map": "/countries-api/static/js/main.cfec483a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c50e2d05.css",
+    "static/js/main.cfec483a.js"
+  ]
+}
