@@ -85,6 +85,20 @@ select {
     width: 200px;
   }
 }
+@media only screen and (max-width: 471px) {
+  .search-bar form img {
+    top: 40px;
+    left: 11px;
+  }
+  .filter-bar {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .search-container {
+    padding-left: 50px;
+  }
+}
 @media only screen and (max-width: 320px) {
   .search-container {
     padding-left: 10px;
