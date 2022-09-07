@@ -11,6 +11,12 @@
   width: max-content;
   height: 75vh;
   margin: auto;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 967px) {
+  .content-container {
+    column-gap: 50px;
+  }
 }
 @media only screen and (max-width: 950px) {
   .content-container {

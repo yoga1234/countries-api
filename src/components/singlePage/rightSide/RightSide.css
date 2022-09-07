@@ -25,6 +25,17 @@
 }
 .border-container p {
   font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+.border-container p span.border-separator {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 500px;
 }
 .border-container p span.border-separator span {
   background-color: var(--color-bg-secondary);
@@ -33,41 +44,34 @@
   border: none;
   border-radius: 5px;
   padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px hsl(200, 15%, 8%);
   -moz-box-shadow: 0px 0px 10px 0px hsl(200, 15%, 8%);
   box-shadow: 0px 0px 10px 0px hsl(200, 15%, 8%);
   transition: all 0.15s ease;
-}
-.border-container p span.border-separator span:nth-child(1) {
-  margin-left: 20px;
 }
 .border-container p span.border-separator span:hover {
   -webkit-box-shadow: 0px 0px 5px 0px var(--font-color);
   -moz-box-shadow: 0px 0px 5px 0px var(--font-color);
   box-shadow: 0px 0px 5px 0px var(--font-color);
 }
+@media only screen and (max-width: 1134px) {
+  .border-container p {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
 @media only screen and (max-width: 950px) {
   .rightside-container {
     margin-top: 50px;
-    margin-bottom: 50px;
   }
-}
-@media only screen and (max-width: 500px) {
-  .description-container {
-    height: max-content;
-  }
-  .border-container p {
-    display: flex;
-    flex-direction: column;
+  .rightside-container h2 {
+    text-align: center;
   }
   .border-container p span.border-separator {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 20px;
     width: 400px;
+  }
+  .border-container p span.border-separator span:nth-child(1) {
+    margin-left: 0;
   }
   .border-container p span.border-separator span {
     margin-top: 25px;
@@ -75,7 +79,40 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .border-container p span.border-separator span:nth-child(1) {
+}
+@media only screen and (max-width: 500px) {
+  .description-container {
+    height: max-content;
+    text-align: center;
+  }
+  .border-container p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .border-container p span.border-separator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    width: 500px;
+  }
+  .border-container p span.border-separator span {
+    margin-top: 25px;
+    width: max-content;
     margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 492px) {
+  .border-container p span.border-separator {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 417px) {
+  .border-container p span.border-separator {
+    width: 300px;
+    margin: auto;
   }
 }
